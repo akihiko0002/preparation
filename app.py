@@ -18,6 +18,10 @@ def template():
 def sarada():
     return render_template("sarada.html")
 
+@app.route("/weather")
+def weather():
+    return render_template("weather.html")
+
 @app.route("/new")
 def new():
     return render_template("new.html")
